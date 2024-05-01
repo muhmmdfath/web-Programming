@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulir page 1 aplikasi pembukaan rekening BNI</title>
+    <link rel="stylesheet" type="text/css" href="css/css1.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="bni" src="aset/BNI_logo.svg.png" alt="Logo" />
+      <img class="profil" src="aset/profil.png" alt="profil" />
+    </nav>
+    <div class="container cf">
+      <h1>FORMULIR APLIKASI PEMBUKAAN REKENING INVESTOR (PERORANGAN)</h1>
+      <div class="formbold-steps">
+        <center>
+          <ul>
+            <li class="formbold-step-menu1 active">
+              <span>1</span>
+              Nomor Rekening
+            </li>
+            <li class="formbold-step-menu2">
+              <span>2</span>
+              Data Pemohon
+            </li>
+            <li class="formbold-step-menu3">
+              <span>3</span>
+              Alamat Pemohon
+            </li>
+            <li class="formbold-step-menu4">
+              <span>4</span>
+              Submit
+            </li>
+          </ul>
+        </center>
+      </div>
+
+      <form id="form1">
+        <div>
+          <b
+            ><span>Nomor Rekening <span class="bintang">*</span></span>
+            <span class="kanan2">Rekening <span class="bintang">*</span></span>
+          </b>
+        </div>
+
+        <div>
+          <input class="text-box" type="text" id="no.rek" required />
+          <input
+            type="radio"
+            id="ada"
+            name="rekening"
+            value="ada"
+            class="custom-radio"
+          />
+          <label class="radio-container" for="ada"
+            ><span> Rek. Yang ada</span></label
+          >
+          <input
+            type="radio"
+            id="baru"
+            name="rekening"
+            value="baru"
+            class="custom-radio"
+            required
+          />
+          <label class="radio-container" for="baru"
+            ><span> Rek. Baru</span></label
+          >
+        </div>
+
+        <br /><br /><br />
+        <div>
+          <b
+            ><span>Nomor CIF <span class="bintang">*</span></span></b
+          >
+          <b
+            ><span class="kanan2"> CIF <span class="bintang">*</span></span></b
+          >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="text-box" id="no.cif" required />
+          <input
+            type="radio"
+            id="cif_lama"
+            name="cif"
+            value="cif_lama"
+            class="custom-radio"
+            required
+          />
+
+          <label class="radio-container" for="cif_lama"
+            ><span> CIF Lama</span>
+          </label>
+          <input
+            type="radio"
+            id="cif_baru"
+            name="cif"
+            value="cif_baru"
+            class="custom-radio"
+            required
+          />
+          <label class="radio-container" for="cif_baru"
+            ><span>CIF Baru</span>
+          </label>
+        </div>
+
+        <br /><br /><br />
+        <b>
+          <span>Nomor SID <span class="bintang">*</span></span>
+          <span class="kanan2"
+            >Nomor Sub Rekening Efek <span class="bintang">*</span></span
+          >
+        </b>
+        <div class="form-group">
+          <input class="text-box" type="text" id="no.sid" required />
+          <input class="text-box kanan2" type="text" id="no.sub-rek" required />
+        </div>
+      </form>
+      <br /><br /><br /><br />
+
+      <a href="formulir2.html">
+        <button id="nextButton" type="submit"><b> Selanjutnya</b></button></a
+      >
+    </div>
+
+    <script>
+      document
+        .getElementById("nextButton")
+        .addEventListener("click", function (event) {
+          // Ambil semua field dalam form
+          var fields = document
+            .getElementById("form1")
+            .querySelectorAll("input[required]");
+
+          // Loop melalui setiap field
+          for (var i = 0; i < fields.length; i++) {
+            // Jika ada field yang kosong, mencegah navigasi ke langkah berikutnya
+            if (!fields[i].value) {
+              event.preventDefault();
+              alert("Silakan isi semua field sebelum melanjutkan.");
+              return; // Menghentikan loop jika ada field kosong
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

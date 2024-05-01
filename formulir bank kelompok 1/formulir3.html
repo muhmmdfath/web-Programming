@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulir page 3 aplikasi pembukaan rekening BNI</title>
+    <link rel="stylesheet" type="text/css" href="css/css3.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="bni" src="aset/BNI_logo.svg.png" alt="Logo" />
+      <img class="profil" src="aset/profil.png" alt="profil" />
+    </nav>
+    <div class="container cf">
+      <div class="header"></div>
+
+      <h1>FORMULIR APLIKASI PEMBUKAAN REKENING INVESTOR (PERORANGAN)</h1>
+      <div class="formbold-steps">
+        <center>
+          <ul>
+            <a href="formulir1.html"
+              ><li class="formbold-step-menu1">
+                <span>1</span>
+                Nomor Rekening
+              </li>
+            </a>
+            <a href="formulir2.html"
+              ><li class="formbold-step-menu2">
+                <span>2</span>
+                Data Pemohon
+              </li>
+            </a>
+            <li class="formbold-step-menu3 active">
+              <span>3</span>
+              Alamat Pemohon
+            </li>
+            <li class="formbold-step-menu4">
+              <span>4</span>
+              Submit
+            </li>
+          </ul>
+        </center>
+      </div>
+
+      <form id="form3">
+        <div style="margin-top: 20px">
+          <b>
+            <span
+              >Alamat Tempat Tinggal Terkini
+              <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 120px"
+              >RT <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 50px"
+              >Rw <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 40px"
+              >Desa/Kelurahan <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="alamat"
+            class="text-box"
+            style="width: 300px"
+            required
+          />
+          <input
+            type="number"
+            id="rt"
+            style="width: 30px; margin: auto 30px"
+            class="text-box"
+            required
+          />
+          <input
+            type="number"
+            id="rt"
+            style="width: 30px; margin-right: 30px"
+            class="text-box"
+            required
+          />
+          <input
+            type="text"
+            id="desa"
+            class="text-box"
+            style="width: 210px"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Kecamatan <span class="bintang">*</span></span>
+            <span style="margin-left: 200px"
+              >Kabupaten/Kota <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 115px"
+              >Kode Pos <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            style="width: 250px"
+            type="text"
+            id="kecamatan"
+            class="text-box"
+            required
+          />
+          <input
+            type="text"
+            id="kabupaten"
+            class="text-box"
+            style="margin: auto 27px; width: 200px"
+            required
+          />
+          <input type="text" id="kode_pos" class="text-box" required />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Provinsi <span class="bintang">*</span></span>
+            <span style="margin-left: 305px"
+              >Negara <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="provinsi"
+            class="text-box"
+            style="width: 43%"
+            required
+          />
+          <input
+            type="text"
+            id="negara"
+            class="text-box"
+            style="width: 45%; margin-left: 10px"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Status Tempat Tinggal <span class="bintang">*</span></span>
+            <span style="margin-left: 100px"
+              >Nomor Telepon <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 120px"
+              >Nomor HP <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <select style="width: 250px" required>
+            <option value="Milik Sendiri">Milik Sendiri</option>
+            <option value="Milik Keluarga">Milik Keluarga</option>
+            <option value="Rumah Dinas">Rumah Dinas</option>
+            <option value="Sewa">Sewa</option>
+          </select>
+
+          <input
+            type="text"
+            id="no_telp"
+            class="text-box"
+            style="margin: auto 25px; width: 200px"
+            required
+          />
+
+          <input
+            type="text"
+            id="no_hp"
+            class="text-box"
+            style="width: 200px"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Email <span class="bintang">*</span></span>
+            <span style="margin-left: 230px"
+              >Latar Belakang Pendidikan <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 35px"
+              >Latar Belakang Pekerjaan <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <input
+            type="Email"
+            id="email"
+            class="text-box"
+            style="width: 235px"
+            required
+          />
+
+          <select style="width: 220px; margin: auto 25px" required>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="D1-D2">D1-D2</option>
+            <option value="D3">D3</option>
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+          </select>
+
+          <select style="width: 220px" required>
+            <option value="Pelajar">Pelajar</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+            <option value="Pegawai Swasta">Pegawai Swasta</option>
+            <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+            <option value="Pegawai Negeri">Pegawai Negeri</option>
+            <option value="Guru">Guru</option>
+            <option value="Wiraswasta">Wiraswasta</option>
+            <option value="TNI / Polisi">TNI / Polisi</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="button-container">
+        <a href="formulir2.html"
+          ><button style="float: left"><b> Sebelumnya</b></button></a
+        >
+        <a href="submit.html"
+          ><button id="nextButton" style="float: right; margin-right: 40px">
+            <b>Selanjutnya</b>
+          </button></a
+        >
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("nextButton")
+        .addEventListener("click", function (event) {
+          // Ambil semua field dalam form
+          var fields = document
+            .getElementById("form3")
+            .querySelectorAll("input[required]");
+
+          // Loop melalui setiap field
+          for (var i = 0; i < fields.length; i++) {
+            // Jika ada field yang kosong, mencegah navigasi ke langkah berikutnya
+            if (!fields[i].value) {
+              event.preventDefault();
+              alert("Silakan isi semua field sebelum melanjutkan.");
+              return; // Menghentikan loop jika ada field kosong
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

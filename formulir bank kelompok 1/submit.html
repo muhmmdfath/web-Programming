@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulir page 1 aplikasi pembukaan rekening BNI</title>
+    <link rel="stylesheet" type="text/css" href="css/css4.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="bni" src="aset/BNI_logo.svg.png" alt="Logo" />
+      <img class="profil" src="aset/profil.png" alt="profil" />
+    </nav>
+
+    <div class="container">
+      <h1>FORMULIR APLIKASI PEMBUKAAN REKENING INVESTOR (PERORANGAN)</h1>
+
+      <div class="formbold-steps">
+        <center>
+          <ul>
+            <a href="formulir1.html"
+              ><li class="formbold-step-menu1">
+                <span>1</span>
+                Nomor Rekening
+              </li>
+            </a>
+            <a href="formulir2.html"
+              ><li class="formbold-step-menu2">
+                <span>2</span>
+                Data Pemohon
+              </li>
+            </a>
+            <a href="formulir3.html"
+              ><li class="formbold-step-menu3">
+                <span>3</span>
+                Alamat Pemohon
+              </li></a
+            >
+            <li class="formbold-step-menu4 active">
+              <span>4</span>
+              Submit
+            </li>
+          </ul>
+        </center>
+      </div>
+      <span class="data" style="display: block; text-align: center"
+        >Data Rekening</span
+      >
+      <br /><br />
+
+      <form id="form1">
+        <div>
+          <b
+            ><span>Nomor Rekening <span class="bintang">*</span></span>
+            <span class="kanan2">Rekening <span class="bintang">*</span></span>
+          </b>
+        </div>
+
+        <div>
+          <input class="text-box" type="text" id="no.rek" disabled />
+          <input
+            type="radio"
+            id="ada"
+            name="rekening"
+            value="ada"
+            class="custom-radio"
+          />
+          <label class="radio-container" for="ada"
+            ><span> Rek. Yang ada</span></label
+          >
+          <input
+            type="radio"
+            id="baru"
+            name="rekening"
+            value="baru"
+            class="custom-radio"
+            disabled
+          />
+          <label class="radio-container" for="baru"
+            ><span> Rek. Baru</span></label
+          >
+        </div>
+
+        <br /><br /><br />
+        <div>
+          <b
+            ><span>Nomor CIF <span class="bintang">*</span></span></b
+          >
+          <b
+            ><span class="kanan2"> CIF <span class="bintang">*</span></span></b
+          >
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="text-box" id="no.cif" disabled />
+          <input
+            type="radio"
+            id="cif_lama"
+            name="cif"
+            value="cif_lama"
+            class="custom-radio"
+            disabled
+          />
+
+          <label class="radio-container" for="cif_lama"
+            ><span> CIF Lama</span>
+          </label>
+          <input
+            type="radio"
+            id="cif_baru"
+            name="cif"
+            value="cif_baru"
+            class="custom-radio"
+            disabled
+          />
+          <label class="radio-container" for="cif_baru"
+            ><span>CIF Baru</span>
+          </label>
+        </div>
+
+        <br /><br /><br />
+        <b>
+          <span>Nomor SID <span class="bintang">*</span></span>
+          <span class="kanan2"
+            >Nomor Sub Rekening Efek <span class="bintang">*</span></span
+          >
+        </b>
+        <div class="form-group">
+          <input class="text-box" type="text" id="no.sid" disabled />
+          <input class="text-box kanan2" type="text" id="no.sub-rek" disabled />
+        </div>
+
+        <br /><br />
+        <span class="data" style="display: block; text-align: center"
+          >Data Pemohon</span
+        >
+        <br /><br />
+        <link rel="stylesheet" type="text/css" href="css/css2.css" />
+
+        <div>
+          <b
+            ><span>Nama Lengkap Sesuai KTP <span class="bintang">*</span></span>
+            <span style="margin-left: 300px"
+              >Jenis Kelamin <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="nama"
+            style="width: 450px"
+            class="text-box"
+            disabled
+          />
+
+          <input
+            type="radio"
+            id="cewe"
+            name="JK"
+            value="cewe"
+            class="custom"
+            disabled
+          />
+          <label for="cewe" class="radio-cont" style="margin: auto 40px"
+            ><b> Perempuan</b></label
+          >
+          <input
+            type="radio"
+            id="cowo"
+            name="JK"
+            value="cowo"
+            class="custom"
+            disabled
+          />
+          <label for="cowo" class="radio-cont"><b> Laki-laki</b></label>
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Tempat Lahir <span class="bintang">*</span></span>
+            <span style="margin-left: 110px"
+              >Tanggal Lahir <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 85px"
+              >Status Menikah <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="tempat_lahir"
+            class="text-box"
+            style="width: 178px"
+          />
+          <input
+            type="date"
+            id="tgl_lahir"
+            class="date"
+            style="margin: auto 20px"
+            disabled
+          />
+
+          <input
+            type="radio"
+            id="menikah"
+            name="status"
+            value="menikah"
+            class="custom"
+            disabled
+          />
+          <label for="menikah" class="radio-cont" style="margin-left: 20px"
+            ><b> Menikah</b></label
+          >
+          <input
+            type="radio"
+            id="Lajang"
+            name="status"
+            value="Lajang"
+            class="custom"
+            disabled
+          />
+          <label for="Lajang" class="radio-cont" style="margin: auto 20px"
+            ><b> Lajang</b></label
+          >
+          <input
+            type="radio"
+            id="Janda/Duda"
+            name="status"
+            value="Janda/Duda"
+            class="custom"
+            disabled
+          />
+          <label for="Janda/Duda" class="radio-cont"><b> Janda/Duda</b></label>
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Agama <span class="bintang">*</span></span>
+            <span style="margin-left: 270px"
+              >Nama Ibu Kandung <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <select style="width: 320px" disabled>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Kong hu cu">Kong hu cu</option>
+          </select>
+
+          <input
+            class="text-box"
+            type="text"
+            id="ibu"
+            style="width: 400px; margin-left: 10px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Upload Tanda Pengenal <span class="bintang">*</span></span>
+            <label for="jenis_pengenal" style="margin-left: 30px"
+              >Jenis Tanda Pengenal <span class="bintang">*</span></label
+            >
+            <label for="nomor" style="margin-left: 60px"
+              >Nomor <span class="bintang">*</span></label
+            ></b
+          >
+        </div>
+
+        <div>
+          <label for="tanda_pengenal" class="custom-file-upload"
+            >Browse..</label
+          >
+          <input
+            type="file"
+            id="tanda_pengenal"
+            name="tanda_pengenal"
+            accept="image/png, image/jpeg"
+            disabled
+          />
+
+          <select
+            disabled
+            id="jenis_pengenal"
+            style="width: 200px; margin-left: 140px"
+          >
+            <option value="KTP">KTP</option>
+            <option value="SIM">SIM</option>
+            <option value="Pasport">Pasport</option>
+          </select>
+
+          <input
+            type="text"
+            id="nomor"
+            class="text-box"
+            style="margin-left: 30px; width: 280px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Tempat Terbit <span class="bintang">*</span></span>
+            <span style="margin-left: 125px"
+              >Tahun Terbit <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 95px"
+              >Berlaku s/d <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="tempat_terbit"
+            class="text-box"
+            style="width: 180px"
+            disabled
+          />
+          <input style="margin: auto 40px" type="date" disabled />
+          <input style="margin-left: -5px" type="date" disabled />
+
+          <input
+            style="margin-left: 30px"
+            type="checkbox"
+            id="seumur_hidup"
+            disabled
+          />
+          <b><label for="seumur_hidup">Seumur Hidup</label></b>
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Kewarganegaraan <span class="bintang">*</span></span></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="WNI"
+            name="kewarganegaraan"
+            value="WNI"
+            class="custom"
+            disabled
+          />
+          <label for="WNI" class="radio-cont"><b> WNI</b></label>
+          <input
+            type="radio"
+            id="WNA"
+            name="kewarganegaraan"
+            value="WNA"
+            class="custom"
+            disabled
+          />
+          <label
+            for="WNA"
+            class="radio-cont"
+            style="margin-left: 80px; margin-right: 10px"
+            ><b> WNA</b></label
+          >
+
+          <input
+            type="text"
+            id="asal_wna"
+            style="width: 300px"
+            class="text-box"
+            disabled
+          /><span style="margin-left: 10px" class="bintang"><b>*</b></span>
+        </div>
+
+        <div style="margin-top: 20px; margin-bottom: 10px">
+          <b
+            ><span>NPWP<span class="bintang">*</span></span></b
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="tidak_ada"
+            name="kewarganegaraan"
+            value="tidak_ada"
+            class="custom"
+            disabled
+          />
+          <label for="tidak_ada" class="radio-cont"><b> Tidak Ada</b></label>
+          <input
+            type="radio"
+            id="ada"
+            name="kewarganegaraan"
+            value="ada"
+            class="custom"
+            disabled
+          />
+          <label for="ada" class="radio-cont" style="margin-left: 35px"
+            ><b> Ada</b></label
+          >
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Nomor NPWP <span class="bintang">*</span></span>
+            <span style="margin-left: 245px"
+              >Tempat Terbit <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 120px"
+              >Tahun Terbit <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="no_npwp"
+            class="text-box"
+            style="width: 300px"
+            disabled
+          />
+
+          <input
+            type="text"
+            id="no_npwp"
+            class="text-box"
+            style="margin: auto 35px; width: 180px"
+            disabled
+          />
+          <input type="date" id="tahun_terbit" disabled />
+        </div>
+
+        <br /><br />
+        <span class="data" style="display: block; text-align: center"
+          >Alamat Pemohon</span
+        >
+        <br /><br />
+        <link rel="stylesheet" type="text/css" href="css/css3.css" />
+
+        <div style="margin-top: 20px">
+          <b>
+            <span
+              >Alamat Tempat Tinggal Terkini
+              <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 120px"
+              >RT <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 50px"
+              >Rw <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 40px"
+              >Desa/Kelurahan <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="alamat"
+            class="text-box"
+            style="width: 300px"
+            disabled
+          />
+          <input
+            type="number"
+            id="rt"
+            style="width: 30px; margin: auto 30px"
+            class="text-box"
+            disabled
+          />
+          <input
+            type="number"
+            id="rt"
+            style="width: 30px; margin-right: 30px"
+            class="text-box"
+            disabled
+          />
+          <input
+            type="text"
+            id="desa"
+            class="text-box"
+            style="width: 210px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Kecamatan <span class="bintang">*</span></span>
+            <span style="margin-left: 200px"
+              >Kabupaten/Kota <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 115px"
+              >Kode Pos <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            style="width: 250px"
+            type="text"
+            id="kecamatan"
+            class="text-box"
+            disabled
+          />
+          <input
+            type="text"
+            id="kabupaten"
+            class="text-box"
+            style="margin: auto 30px; width: 200px"
+            disabled
+          />
+          <input
+            type="text"
+            id="kode_pos"
+            class="text-box"
+            style="width: 170px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Provinsi <span class="bintang">*</span></span>
+            <span style="margin-left: 305px"
+              >Negara <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="provinsi"
+            class="text-box"
+            style="width: 43%"
+            disabled
+          />
+          <input
+            type="text"
+            id="negara"
+            class="text-box"
+            style="width: 45%; margin-left: 10px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Status Tempat Tinggal <span class="bintang">*</span></span>
+            <span style="margin-left: 100px"
+              >Nomor Telepon <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 120px"
+              >Nomor HP <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <select style="width: 250px" disabled>
+            <option value="Milik Sendiri">Milik Sendiri</option>
+            <option value="Milik Keluarga">Milik Keluarga</option>
+            <option value="Rumah Dinas">Rumah Dinas</option>
+            <option value="Sewa">Sewa</option>
+          </select>
+
+          <input
+            type="text"
+            id="no_telp"
+            class="text-box"
+            style="margin: auto 25px; width: 200px"
+            disabled
+          />
+
+          <input
+            type="text"
+            id="no_hp"
+            class="text-box"
+            style="width: 200px"
+            disabled
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Email <span class="bintang">*</span></span>
+            <span style="margin-left: 230px"
+              >Latar Belakang Pendidikan <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 35px"
+              >Latar Belakang Pekerjaan <span class="bintang">*</span></span
+            >
+          </b>
+        </div>
+
+        <div>
+          <input
+            type="Email"
+            id="email"
+            class="text-box"
+            style="width: 235px"
+            disabled
+          />
+
+          <select style="width: 220px; margin: auto 25px" disabled>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="D1-D2">D1-D2</option>
+            <option value="D3">D3</option>
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+          </select>
+
+          <select style="width: 220px" disabled>
+            <option value="Pelajar">Pelajar</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+            <option value="Pegawai Swasta">Pegawai Swasta</option>
+            <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+            <option value="Pegawai Negeri">Pegawai Negeri</option>
+            <option value="Guru">Guru</option>
+            <option value="Wiraswasta">Wiraswasta</option>
+            <option value="TNI / Polisi">TNI / Polisi</option>
+          </select>
+        </div>
+
+        <br /><br /><br />
+        <div class="check">
+          <input type="checkbox" id="centang" required />
+          <p
+            style="
+              font-size: 14px;
+              text-align: justify;
+              margin-left: 20px;
+              padding-top: 0px;
+            "
+          >
+            Dengan meng-klik setuju pada checkbox ini saya menyatakan bahwa data
+            yang saya isikan adalah benar dan menyetujui setiap pernyataan yang
+            ada tanpa ada paksaan dari pihak manapun dan apabila dikemudian hari
+            pernyataan ini terbukti tidak benar, maka saya bersedia dituntut
+            dimuka pengadilan serta bersedia menerima segala tindakan yang
+            diambil oleh pihak BNI.
+          </p>
+        </div>
+      </form>
+
+      <a href="verified.html" class="button-container"
+        ><button
+          id="nextButton"
+          style="float: right; margin-right: 50%; margin-bottom: 50px"
+        >
+          <b>Submit</b>
+        </button></a
+      >
+    </div>
+  </body>
+</html>

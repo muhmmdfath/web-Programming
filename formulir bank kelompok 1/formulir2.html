@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulir page 2 aplikasi pembukaan rekening BNI</title>
+    <link rel="stylesheet" type="text/css" href="css/css2.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="bni" src="aset/BNI_logo.svg.png" alt="Logo" />
+      <img class="profil" src="aset/profil.png" alt="profil" />
+    </nav>
+    <div class="container cf">
+      <h1>FORMULIR APLIKASI PEMBUKAAN REKENING INVESTOR (PERORANGAN)</h1>
+
+      <div class="formbold-steps">
+        <center>
+          <ul>
+            <a href="formulir1.html"
+              ><li class="formbold-step-menu1">
+                <span>1</span>
+                Nomor Rekening
+              </li>
+            </a>
+            <li class="formbold-step-menu2 active">
+              <span>2</span>
+              Data Pemohon
+            </li>
+            <li class="formbold-step-menu3">
+              <span>3</span>
+              Alamat Pemohon
+            </li>
+            <li class="formbold-step-menu4">
+              <span>4</span>
+              Submit
+            </li>
+          </ul>
+        </center>
+      </div>
+
+      <form id="form2">
+        <div>
+          <b
+            ><span>Nama Lengkap Sesuai KTP <span class="bintang">*</span></span>
+            <span style="margin-left: 300px"
+              >Jenis Kelamin <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="nama"
+            style="width: 450px"
+            class="text-box"
+            required
+          />
+
+          <input
+            type="radio"
+            id="cewe"
+            name="JK"
+            value="cewe"
+            class="custom-radio"
+            required
+          />
+          <label for="cewe" class="radio-container" style="margin: auto 40px"
+            ><b> Perempuan</b></label
+          >
+          <input
+            type="radio"
+            id="cowo"
+            name="JK"
+            value="cowo"
+            class="custom-radio"
+            required
+          />
+          <label for="cowo" class="radio-container"><b> Laki-laki</b></label>
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Tempat Lahir <span class="bintang">*</span></span>
+            <span style="margin-left: 110px"
+              >Tanggal Lahir <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 85px"
+              >Status Menikah <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input type="text" id="tempat_lahir" class="text-box" />
+          <input
+            type="date"
+            id="tgl_lahir"
+            class="date"
+            style="margin: auto 20px"
+            required
+          />
+
+          <input
+            type="radio"
+            id="menikah"
+            name="status"
+            value="menikah"
+            class="custom-radio"
+            required
+          />
+          <label for="menikah" class="radio-container" style="margin-left: 20px"
+            ><b> Menikah</b></label
+          >
+          <input
+            type="radio"
+            id="Lajang"
+            name="status"
+            value="Lajang"
+            class="custom-radio"
+            required
+          />
+          <label for="Lajang" class="radio-container" style="margin: auto 20px"
+            ><b> Lajang</b></label
+          >
+          <input
+            type="radio"
+            id="Janda/Duda"
+            name="status"
+            value="Janda/Duda"
+            class="custom-radio"
+            required
+          />
+          <label for="Janda/Duda" class="radio-container"
+            ><b> Janda/Duda</b></label
+          >
+        </div>
+
+        <div style="margin-top: 20px">
+          <b>
+            <span>Agama <span class="bintang">*</span></span>
+            <span style="margin-left: 270px"
+              >Nama Ibu Kandung <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <select style="width: 320px" required>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Kong hu cu">Kong hu cu</option>
+          </select>
+
+          <input
+            class="text-box"
+            type="text"
+            id="ibu"
+            style="width: 400px; margin-left: 10px"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Upload Tanda Pengenal <span class="bintang">*</span></span>
+            <label for="jenis_pengenal" style="margin-left: 30px"
+              >Jenis Tanda Pengenal <span class="bintang">*</span></label
+            >
+            <label for="nomor" style="margin-left: 60px"
+              >Nomor <span class="bintang">*</span></label
+            ></b
+          >
+        </div>
+
+        <div>
+          <label for="tanda_pengenal" class="custom-file-upload"
+            >Browse..</label
+          >
+          <input
+            type="file"
+            id="tanda_pengenal"
+            name="tanda_pengenal"
+            accept="image/png, image/jpeg"
+            required
+          />
+
+          <select
+            required
+            id="jenis_pengenal"
+            style="width: 200px; margin-left: 140px"
+          >
+            <option value="KTP">KTP</option>
+            <option value="SIM">SIM</option>
+            <option value="Pasport">Pasport</option>
+          </select>
+
+          <input
+            type="text"
+            id="nomor"
+            class="text-box"
+            style="margin-left: 30px; width: 280px"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Tempat Terbit <span class="bintang">*</span></span>
+            <span style="margin-left: 125px"
+              >Tahun Terbit <span class="bintang">*</span></span
+            >
+            <span style="margin-left: 95px"
+              >Berlaku s/d <span class="bintang">*</span></span
+            ></b
+          >
+        </div>
+
+        <div>
+          <input type="text" id="tempat_terbit" class="text-box" required />
+          <input style="margin: auto 40px" type="date" required />
+          <input style="margin-left: -5px" type="date" required />
+
+          <input
+            style="margin-left: 30px"
+            type="checkbox"
+            id="seumur_hidup"
+            required
+          />
+          <b><label for="seumur_hidup">Seumur Hidup</label></b>
+        </div>
+
+        <div style="margin-top: 20px">
+          <b
+            ><span>Kewarganegaraan <span class="bintang">*</span></span></b
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="WNI"
+            name="kewarganegaraan"
+            value="WNI"
+            class="custom-radio"
+            required
+            onclick="toggleWNAInput(false)"           
+          />
+          <label for="WNI" class="radio-container" style="margin-top: 10px;"><b> WNI</b></label>
+          <input
+            type="radio"
+            id="WNA"
+            name="kewarganegaraan"
+            value="WNA"
+            class="custom-radio"
+            required
+            onclick="toggleWNAInput(true)"
+          />
+          <label
+            for="WNA"
+            class="radio-container"
+            style="margin-left: 80px; margin-right: 10px"
+            ><b> WNA</b></label
+          >
+
+          <input
+            type="text"
+            id="asal_wna"
+            style="width: 300px"
+            class="wna-input text-box"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 20px; margin-bottom: 10px">
+          <b
+            ><span>NPWP<span class="bintang">*</span></span></b
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="tidak_ada"
+            name="npwp"
+            value="tidak_ada"
+            class="custom-radio"
+            required
+            onclick="toggleNPWPInput(false)"
+          />
+          <label for="tidak_ada" class="radio-container"
+            ><b> Tidak Ada</b></label
+          >
+          <input
+            type="radio"
+            id="ada"
+            name="npwp"
+            value="ada"
+            class="custom-radio"
+            required
+            onclick="toggleNPWPInput(true)"
+          />
+          <label for="ada" class="radio-container" style="margin-left: 35px"
+            ><b> Ada</b></label
+          >
+        </div>
+
+       <div id="npwpInputs" class="npwp-input">
+            <div style="margin-top: 20px">
+                <b><span>Nomor NPWP <span class="bintang">*</span></span></b>
+                <b><span style="margin-left: 245px">Tempat Terbit <span class="bintang">*</span></span></b>
+                <b><span style="margin-left: 120px">Tahun Terbit <span class="bintang">*</span></span></b>
+            </div>
+
+            <div>
+                <input
+                    type="text"
+                    id="no_npwp"
+                    class="text-box"
+                    style="width: 300px"
+                    required
+                />
+
+                <input
+                    type="text"
+                    id="tempatTerbit"
+                    class="text-box"
+                    style="margin: auto 35px"
+                    required
+                />
+                <input type="date" id="tahunTerbit" required />
+            </div>
+        </div>
+
+        
+      </form>
+      <div class="button-container">
+        <a href="formulir1.html"
+          ><button style="float: left"><b> Sebelumnya</b></button></a
+        >
+        <a href="formulir3.html"
+          ><button id="nextButton" style="float: right; margin-right: 30px">
+            <b>Selanjutnya</b>
+          </button></a
+        >
+      </div>
+    </div>
+
+    <script>
+
+      function toggleWNAInput(show) {
+        var wnaInput = document.getElementById("asal_wna");
+        if (show) {
+            wnaInput.style.display = "inline-block"; // Show WNA text box
+            wnaInput.setAttribute("required", "required"); // Make it required
+        } else {
+            wnaInput.style.display = "none"; // Hide WNA text box
+            wnaInput.removeAttribute("required"); // Remove required attribute
+        }
+    }
+
+    function toggleNPWPInput(show) {
+        var npwpInputs = document.getElementById("npwpInputs");
+        if (show) {
+            npwpInputs.style.display = "block"; // Show NPWP inputs
+            var fields = npwpInputs.querySelectorAll("input, select");
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].setAttribute("required", "required"); // Make NPWP inputs required
+            }
+        } else {
+            npwpInputs.style.display = "none"; // Hide NPWP inputs
+            var fields = npwpInputs.querySelectorAll("input, select");
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].removeAttribute("required"); // Remove required attribute
+            }
+        }
+    }
+
+      document
+        .getElementById("nextButton")
+        .addEventListener("click", function (event) {
+          // Ambil semua field dalam form
+          var fields = document
+            .getElementById("form2")
+            .querySelectorAll("input[required]");
+
+          // Loop melalui setiap field
+          for (var i = 0; i < fields.length; i++) {
+            // Jika ada field yang kosong, mencegah navigasi ke langkah berikutnya
+            if (!fields[i].value) {
+              event.preventDefault();
+              alert("Silakan isi semua field sebelum melanjutkan.");
+              return; // Menghentikan loop jika ada field kosong
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

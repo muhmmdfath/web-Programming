@@ -1,0 +1,210 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../aset/gilroy/Gilroy-Medium.ttf);
+}
+body {
+  font-family: Gilroy;
+  color: #10647c;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bintang {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+  margin: 50px 0;
+}
+.container {
+  width: 210mm;
+  height: 250mm;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 73px 20mm;
+}
+
+nav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+}
+.bni {
+  margin: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.profil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: auto;
+  margin: 15px 30px;
+}
+
+.formbold-steps {
+  padding-bottom: 18px;
+  margin-bottom: 35px;
+}
+.formbold-steps ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.formbold-steps li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e95a2e;
+}
+.formbold-steps li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dde3ec;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #10647c;
+}
+.formbold-steps li.active {
+  color: #10647c;
+}
+.formbold-steps li.active span {
+  background: #e95a2e;
+  color: #ffffff;
+}
+
+input[type="radio"].custom-radio {
+  display: none;
+}
+
+.radio-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-container::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  vertical-align: middle;
+}
+
+ .wna-input {
+    display: none;
+  }
+
+  .npwp-input {
+    display: none;
+  }
+
+input[type="radio"].custom-radio:checked + .radio-container::before {
+  background-color: #e95a2e;
+}
+
+.radio-container span {
+  vertical-align: middle;
+}
+
+.text-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #333;
+  margin-top: 7px;
+}
+
+/* Style untuk kotak input tanggal */
+input[type="date"] {
+  padding: 8px; /* Padding di dalam kotak */
+  border: 1px solid #ccc; /* Border dengan warna abu-abu */
+  border-radius: 5px; /* Sudut bulat untuk kotak */
+  font-family: Gilroy;
+  text-align: center;
+  color: #999;
+  font-size: 16px; /* Ukuran font */
+}
+
+/* Style ketika kotak tanggal mendapat fokus */
+input[type="date"]:focus {
+  outline: none; /* Hilangkan outline saat fokus */
+  border-color: #007bff; /* Ganti warna border saat fokus */
+  box-shadow: 0 0 5px #007bff; /* Efek bayangan saat fokus */
+}
+
+/* Style untuk tombol kalender */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5); /* Ubah warna ikon kalender */
+  cursor: pointer; /* Ganti kursor saat mengarah ke ikon kalender */
+  opacity: 0;
+}
+
+select {
+  padding: 8px; /* Padding di dalam kotak */
+  border: 1px solid #ccc; /* Border dengan warna abu-abu */
+  border-radius: 5px; /* Sudut bulat untuk kotak */
+  font-family: Gilroy;
+  font-size: 16px;
+}
+
+/* Style untuk input file */
+input[type="file"] {
+  display: none; /* Sembunyikan input file yang sebenarnya */
+}
+
+/* Style untuk label yang menimbulkan tindakan saat diklik */
+.custom-file-upload {
+  display: inline-block;
+  padding: 5px 10px; /* Sesuaikan padding sesuai kebutuhan */
+  background-color: #10647c; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut bulat */
+  cursor: pointer; /* Ubah kursor saat diarahkan */
+}
+
+/* Style untuk label saat dihover */
+.custom-file-upload:hover {
+  background-color: #e95a2e; /* Warna latar belakang saat dihover */
+}
+
+button {
+  background-color: #10647c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Gilroy;
+  margin-top: 100px;
+}
+
+button:hover {
+  background-color: #e95a2e;
+}
+
+button:active {
+  background-color: #b62d03;
+}
